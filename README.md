@@ -54,7 +54,7 @@ nss_initgroups_ignoreusers avahi,avahi-autoipd,backup,bin,colord,daemon,games,gn
 9. Also we need to make sure home dirs are created on server if they don't exist (first timers) at `/etc/pam.d/common-session`:
 ```
 session required        pam_unix.so
-session optional        pam_mount.so nullok try_first_pass
+session optional        pam_mount.so
 session optional        pam_ldap.so
 session optional        pam_systemd.so
 session required        pam_mkhomedir.so skel=/etc/skel/ umask=0077
