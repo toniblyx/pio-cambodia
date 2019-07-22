@@ -59,6 +59,9 @@ session optional        pam_ldap.so
 session optional        pam_systemd.so
 session required        pam_mkhomedir.so skel=/etc/skel/ umask=0077
 ```
+10. Samba client config `/etc/samba/smb.conf`
+
+
 
 ## Users Management
 
