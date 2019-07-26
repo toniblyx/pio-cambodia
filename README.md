@@ -114,10 +114,7 @@ username3 password
 ```
 
 Then run this one-liner script:
-`while read user pass
-> do
-> sudo pio-tool -a $user -p $pass
-> done < list`
+`while read user pass; do sudo pio-tool -a $user -p $pass; done < list`
 
 ## Cloning micro SD cards with dd on MAC OS and showing progress:
 
